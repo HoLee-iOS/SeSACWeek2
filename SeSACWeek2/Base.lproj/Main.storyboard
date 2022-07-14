@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zoS-Ru-nY7">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -585,10 +586,10 @@
             </objects>
             <point key="canvasLocation" x="5628" y="1340"/>
         </scene>
-        <!--View Controller-->
+        <!--Calcul View Controller-->
         <scene sceneID="R4j-OP-DXr">
             <objects>
-                <viewController id="zoS-Ru-nY7" sceneMemberID="viewController">
+                <viewController id="zoS-Ru-nY7" customClass="CalculViewController" customModule="SeSACWeek2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Ij-kD-1jP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -606,7 +607,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILL-tf-sqL">
-                                        <rect key="frame" x="8" y="8" width="42" height="21"/>
+                                        <rect key="frame" x="8" y="8" width="58" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -636,7 +637,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h47-wx-PEA">
-                                        <rect key="frame" x="8" y="8" width="42" height="21"/>
+                                        <rect key="frame" x="8" y="8" width="64" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -666,7 +667,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFg-VX-rvl">
-                                        <rect key="frame" x="8" y="8" width="42" height="21"/>
+                                        <rect key="frame" x="8" y="8" width="64" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -696,7 +697,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Inx-dz-ZbJ">
-                                        <rect key="frame" x="8" y="8" width="42" height="21"/>
+                                        <rect key="frame" x="8" y="8" width="55" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -719,6 +720,9 @@
                                     <constraint firstAttribute="width" secondItem="AFn-Yo-2CU" secondAttribute="height" multiplier="1.1" id="r6g-ay-Lwj"/>
                                 </constraints>
                                 <locale key="locale" localeIdentifier="en"/>
+                                <connections>
+                                    <action selector="setDateLabel:" destination="zoS-Ru-nY7" eventType="valueChanged" id="MlG-9C-jUX"/>
+                                </connections>
                             </datePicker>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3qK-CC-kcM"/>
@@ -742,6 +746,17 @@
                             <constraint firstItem="AFn-Yo-2CU" firstAttribute="width" secondItem="7Ij-kD-1jP" secondAttribute="width" id="yCf-7q-RqV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="AFn-Yo-2CU" id="oZp-yN-9TI"/>
+                        <outletCollection property="dateLabels" destination="mWY-oV-D4p" collectionClass="NSMutableArray" id="vU9-UF-obY"/>
+                        <outletCollection property="dateLabels" destination="XBY-ya-HaX" collectionClass="NSMutableArray" id="i4W-bh-0jQ"/>
+                        <outletCollection property="dateLabels" destination="Hb7-EF-rWj" collectionClass="NSMutableArray" id="hwj-WD-E1h"/>
+                        <outletCollection property="dateLabels" destination="a4X-sC-A8A" collectionClass="NSMutableArray" id="qlG-W7-pzH"/>
+                        <outletCollection property="dDayLabels" destination="ILL-tf-sqL" collectionClass="NSMutableArray" id="ay9-vT-G1p"/>
+                        <outletCollection property="dDayLabels" destination="Inx-dz-ZbJ" collectionClass="NSMutableArray" id="cF8-ZW-cqA"/>
+                        <outletCollection property="dDayLabels" destination="h47-wx-PEA" collectionClass="NSMutableArray" id="w2j-fx-TUe"/>
+                        <outletCollection property="dDayLabels" destination="fFg-VX-rvl" collectionClass="NSMutableArray" id="kGd-lr-g09"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pbq-uC-as3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

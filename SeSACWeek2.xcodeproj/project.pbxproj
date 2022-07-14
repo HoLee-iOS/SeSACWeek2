@@ -21,6 +21,7 @@
 		C15A8691287FAFC700FABE0E /* TextFieldEffects in Frameworks */ = {isa = PBXBuildFile; productRef = C15A8690287FAFC700FABE0E /* TextFieldEffects */; };
 		C15A8694287FBE4900FABE0E /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C15A8693287FBE4900FABE0E /* IQKeyboardManagerSwift */; };
 		C15A8696287FC2C300FABE0E /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15A8695287FC2C300FABE0E /* SettingViewController.swift */; };
+		C1B7EAD0287FF249000F422E /* CalculViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B7EACF287FF249000F422E /* CalculViewController.swift */; };
 		C1EF2D45287D066D008E0516 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EF2D44287D066D008E0516 /* StackViewController.swift */; };
 		C1EF2D49287D213A008E0516 /* SegmentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EF2D48287D213A008E0516 /* SegmentedViewController.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +39,7 @@
 		C15A8685287FA68100FABE0E /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		C15A8687287FA82600FABE0E /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		C15A8695287FC2C300FABE0E /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		C1B7EACF287FF249000F422E /* CalculViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculViewController.swift; sourceTree = "<group>"; };
 		C1EF2D44287D066D008E0516 /* StackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
 		C1EF2D48287D213A008E0516 /* SegmentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +91,7 @@
 				C103DC0C287BA44E00BCF202 /* Info.plist */,
 				C1EF2D44287D066D008E0516 /* StackViewController.swift */,
 				C1EF2D48287D213A008E0516 /* SegmentedViewController.swift */,
+				C1B7EACF287FF249000F422E /* CalculViewController.swift */,
 			);
 			path = SeSACWeek2;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1B7EAD0287FF249000F422E /* CalculViewController.swift in Sources */,
 				C103DC03287BA44E00BCF202 /* ViewController.swift in Sources */,
 				C1EF2D45287D066D008E0516 /* StackViewController.swift in Sources */,
 				C1EF2D49287D213A008E0516 /* SegmentedViewController.swift in Sources */,
@@ -338,6 +342,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -347,7 +352,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -365,6 +370,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -374,7 +380,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -22,10 +22,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var label8: UILabel!
     @IBOutlet weak var label9: UILabel!
     
+    @IBOutlet var labels: [UILabel]!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         
     }
@@ -93,8 +95,6 @@ class ViewController: UIViewController {
         label9.text = "행복해\(nums[8])"
         
     }
-    
-    
     
     
     

@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-
+    //눌리는 횟수를 받을 변수를 배열로 생성
     var nums = [0,0,0,0,0,0,0,0,0]
     
     @IBOutlet weak var label1: UILabel!
@@ -32,63 +32,55 @@ class ViewController: UIViewController {
         
     }
 
+    //클릭할때마다 변수에 숫자를 1씩 추가시킨 후에 label에 담아줌
     @IBAction func button1Clicked(_ sender: UIButton) {
         
         nums[0] += 1
         label1.text = "행복해\(nums[0])"
         
     }
-    
     @IBAction func button2Clicked(_ sender: UIButton) {
         
         nums[1] += 1
         label2.text = "행복해\(nums[1])"
         
     }
-    
     @IBAction func button3Clicked(_ sender: UIButton) {
         
         nums[2] += 1
         label3.text = "행복해\(nums[2])"
         
     }
-    
     @IBAction func button4Clicked(_ sender: UIButton) {
         
         nums[3] += 1
         label4.text = "행복해\(nums[3])"
         
     }
-    
     @IBAction func button5Clicked(_ sender: UIButton) {
         
         nums[4] += 1
         label5.text = "행복해\(nums[4])"
         
     }
-    
-    
     @IBAction func button6Clicked(_ sender: UIButton) {
         
         nums[5] += 1
         label6.text = "행복해\(nums[5])"
         
     }
-    
     @IBAction func button7Clicked(_ sender: UIButton) {
         
         nums[6] += 1
         label7.text = "행복해\(nums[6])"
         
     }
-    
     @IBAction func button8Clicked(_ sender: UIButton) {
         
         nums[7] += 1
         label8.text = "행복해\(nums[7])"
         
     }
-    
     @IBAction func button9Clicked(_ sender: UIButton) {
         
         nums[8] += 1

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cxb-ro-VAI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="yiS-B2-fi1">
+            <objects>
+                <viewController id="xvE-ep-9IA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4ab-Gt-bgf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="아농아녕아농아녕아농아녕아농아녕아농아녕아농아녕아농아녕" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFi-4u-IQM">
+                                <rect key="frame" x="20" y="108" width="120" height="36"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="안녕하세요안녕안녕" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHT-4y-NjH">
+                                <rect key="frame" x="160" y="108" width="234" height="36"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="riz-qP-F0V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SmJ-WB-oj5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wHT-4y-NjH" firstAttribute="leading" secondItem="mFi-4u-IQM" secondAttribute="trailing" constant="20" id="3Wf-0X-3nq"/>
+                            <constraint firstItem="wHT-4y-NjH" firstAttribute="top" secondItem="SmJ-WB-oj5" secondAttribute="top" constant="20" id="AAn-4v-d5B"/>
+                            <constraint firstItem="mFi-4u-IQM" firstAttribute="top" secondItem="SmJ-WB-oj5" secondAttribute="top" constant="20" id="Elc-c6-7fm"/>
+                            <constraint firstItem="mFi-4u-IQM" firstAttribute="leading" secondItem="SmJ-WB-oj5" secondAttribute="leading" constant="20" id="OHz-j0-i17"/>
+                            <constraint firstItem="SmJ-WB-oj5" firstAttribute="trailing" secondItem="wHT-4y-NjH" secondAttribute="trailing" constant="20" id="yLs-h5-eIv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8EG-gj-fMP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FdR-Qd-JmO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4739" y="1340"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2jv-ng-MRY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cxb-ro-VAI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wSi-yg-rbN">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xvE-ep-9IA" kind="relationship" relationship="rootViewController" id="mLn-vf-OU9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DIB-03-Sdo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3809" y="1340"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

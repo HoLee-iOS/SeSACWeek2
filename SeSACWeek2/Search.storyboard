@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="닉네임을 입력해주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LUx-cb-bZx" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                <rect key="frame" x="20" y="64" width="374" height="50"/>
+                                <rect key="frame" x="20" y="108" width="374" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="UAv-z6-TIU"/>
                                 </constraints>
@@ -40,7 +40,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TYl-r6-NXA" customClass="FSCalendar">
-                                <rect key="frame" x="20" y="134" width="374" height="200"/>
+                                <rect key="frame" x="20" y="178" width="374" height="200"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="k5N-dY-2sb"/>
@@ -65,10 +65,18 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="TYl-r6-NXA" secondAttribute="trailing" constant="20" id="vRa-Ws-ITj"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="han-PE-HuK">
+                        <barButtonItem key="leftBarButtonItem" image="list.dash" catalog="system" id="NDx-Pz-XZL">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="koR-wA-Ktb" kind="show" id="pQd-J3-NLw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="966.66666666666674" y="45.535714285714285"/>
+            <point key="canvasLocation" x="1876.8115942028987" y="45.535714285714285"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="DYl-a0-ZAz">
@@ -84,7 +92,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kV3-lc-7ES" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2323" y="46"/>
+            <point key="canvasLocation" x="2668" y="46"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ytP-vZ-bVe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iYA-Ry-YuB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vbL-w2-Ksx">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="anI-mL-WwC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5bD-Zg-Jij" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="966.66666666666674" y="45.535714285714285"/>
         </scene>
     </scenes>
     <designables>
@@ -93,6 +119,7 @@
         </designable>
     </designables>
     <resources>
+        <image name="list.dash" catalog="system" width="128" height="85"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

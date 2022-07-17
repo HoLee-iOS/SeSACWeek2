@@ -7,6 +7,7 @@
 
 import UIKit
 
+//씬델리게이트는 iOS 13 이전에는 없었기 때문에 13이후부터 사용가능하다는 어노테이션을 추가
 @available(iOS 13.0, *)
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
